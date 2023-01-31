@@ -25,7 +25,7 @@ public class SqlRepository  implements CommandLineRunner {
     public void run(String... args) throws Exception {
 
         // Создаем города
-        var cities = Stream.of("Москва", "Краснодар", "Иваново", "Москва")
+        var cities = Stream.of("Москва", "Краснодар", "Иваново", "Париж")
                 .map(n -> City.builder()
                         .name(n)
                         .build())
