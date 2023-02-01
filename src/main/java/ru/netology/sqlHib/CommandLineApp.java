@@ -26,7 +26,7 @@ public class CommandLineApp implements CommandLineRunner {
     public void run(String... args) throws Exception {
 
         // Создаем города
-        var cities = Stream.of("Москва", "Краснодар", "Иваново", "Москва")
+        var cities = Stream.of("Москва", "Краснодар", "Иваново", "Казань")
                 .map(n -> City.builder()
                         .name(n)
                         .build()).toList();
@@ -41,7 +41,7 @@ public class CommandLineApp implements CommandLineRunner {
 
         var random = new Random();
 
-        // Создаем и сохраняем сущность человека, полученную на основе мужчин
+        // Создаем и сохраняем сущность человека
         IntStream.range(0, 10)
                 .forEach(i -> {
                     var persons  = Person.builder()
